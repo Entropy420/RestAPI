@@ -24,7 +24,6 @@ export class AppModule implements NestModule {
       .apply(LoggerMid)
       // .forRoutes({ path: 'api/*path', method: RequestMethod.ALL });
       // .forRoutes({ path: 'employees/*path', method: RequestMethod.ALL });
-
       .forRoutes(EmployeesController);
   }
 }
